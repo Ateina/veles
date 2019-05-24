@@ -5,8 +5,8 @@ class Navigation extends Component {
     render() {
         return (
             <div className="navigation">
-                Navigation
-                <Link to="/catalog" className="catalog-button">Catalog</Link>
+                Veles Home
+                <Link to="/catalog" className="navigation-link">Catalog</Link>
             </div>
         );
     }
