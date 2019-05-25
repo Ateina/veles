@@ -12,3 +12,12 @@ body {
     text-decoration: none;
     color: white;
 }
+
+ol {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.navigation-link {
+    display: inline-block;
+}
