@@ -3,7 +3,6 @@ body {
 }
 
 .navigation {
-    display: flex;
     height: 50px;
     background-color: #18AD23;
 }
@@ -16,8 +15,26 @@ body {
 ol {
     list-style-type: none;
     padding-left: 0;
+    margin: 0;
+}
+
+.navigation-links{
+    display: flex;
 }
 
 .navigation-link {
     display: inline-block;
+    line-height: 50px;
+    border-right: 1px white solid;
+    width: 100%;
+    text-align: center;
+}
+
+.footer{
+    height: 50px;
+    background-color: #18AD23;
+    color: white;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
 }
