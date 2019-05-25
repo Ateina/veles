@@ -25,9 +25,12 @@ ol {
 .navigation-link {
     display: inline-block;
     line-height: 50px;
-    border-right: 1px white solid;
     width: 100%;
     text-align: center;
+}
+
+.navigation-link:not(:last-child) {
+    border-right: 1px white solid;
 }
 
 .footer{
