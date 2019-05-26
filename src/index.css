@@ -37,7 +37,24 @@ ol {
     height: 50px;
     background-color: #18AD23;
     color: white;
-    position: absolute;
     width: 100%;
-    bottom: 0;
+}
+
+.pet-card{
+    width: 300px;
+    border: 1px green solid;
+    margin-bottom: 20px;
+    -webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
+    page-break-inside: avoid; /* Firefox */
+    break-inside: avoid;
+}
+
+.pet-card img{
+    width: 300px;
+}
+
+.list-of-pets{
+    margin: 50px;
+    column-count: auto;
+    column-width: 300px;
 }

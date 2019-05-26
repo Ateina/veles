@@ -6,15 +6,16 @@ class PetCard extends Component {
         pet: PropTypes.object
     }
 
-    render() { 
+    render() {
         return (
             <div className="pet-card">
-                Name: {this.props.pet.name}
+                <img src={this.props.pet.image ? this.props.pet.image : 'images/no-photo.jpg'} alt="pet"/>
+                <span className="name">{this.props.pet.name}</span>
             </div>
         );
     }
 }
 
 
- 
+
 export default PetCard;

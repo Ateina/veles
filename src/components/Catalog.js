@@ -6,13 +6,15 @@ class Catalog extends Component {
     render() {
         return (
             <div className="catalog">
-                {Object.keys(pets).map(key => (
-                    <PetCard
-                        key={key}
-                        index={key}
-                        pet={pets[key]}
-                    />
-                ))}
+                <div className="list-of-pets">
+                    {Object.keys(pets).map(key => (
+                        <PetCard
+                            key={key}
+                            index={key}
+                            pet={pets[key]}
+                        />
+                    ))}
+                </div>
             </div>
         );
     }
