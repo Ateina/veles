@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import MainPage from './MainPage';
-import Catalog from './Catalog';
+import Catalog from './Catalog/Catalog';
 import NotFound from './NotFound';
 import Navigation from './Navigation';
 import Login from './Login';

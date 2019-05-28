@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import PetCard from './PetCard';
-import pets from '../data/pets';
+import PetCard from '../PetCard';
+import pets from '../../data/pets';
 
 class Catalog extends Component {
     render() {
