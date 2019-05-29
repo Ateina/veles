@@ -1,6 +1,8 @@
 import React from 'react';
+
 import PetCard from '../PetCard';
 import pets from '../../data/pets';
+import './styles.css';
 
 function Catalog() {
     return (
