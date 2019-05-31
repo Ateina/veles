@@ -1,6 +1,6 @@
 import React from 'react';
 
-import PetCard from '../PetCard';
+import PetCard from '../PetCard/PetCard';
 import pets from '../../data/pets';
 import './styles.css';
 
