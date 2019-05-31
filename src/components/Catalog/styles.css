@@ -1,9 +1,3 @@
-.list-of-pets {
-    margin: 50px;
-    column-count: auto;
-    column-width: 300px;
-}
-
 .catalog {
     min-height: calc(100vh - 100px);
 }
