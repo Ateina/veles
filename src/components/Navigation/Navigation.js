@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 import './styles.css'
 
@@ -8,19 +8,19 @@ function Navigation() {
         <nav className="navigation">
             <ol className="navigation-links">
                 <li className="navigation-link">
-                    <Link to="/">
+                    <NavLink to="/">
                         <div className="logo">Veles Home</div>
-                    </Link>
+                    </NavLink>
                 </li>
                 <li className="navigation-link">
-                    <Link to="/catalog">
+                    <NavLink to="/catalog">
                         <div>Catalog</div>
-                    </Link>
+                    </NavLink>
                 </li>
                 <li className="navigation-link">
-                    <Link to="/login" >
+                    <NavLink to="/login" >
                         <div className="login-link">Login</div>
-                    </Link>
+                    </NavLink>
                 </li>
             </ol>
         </nav>
