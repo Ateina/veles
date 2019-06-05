@@ -1,5 +1,6 @@
 import React from 'react';
 
+import InfoItem from './InfoItem/InfoItem';
 import './styles.css'
 
 class PetProfile extends React.Component {
@@ -8,29 +9,17 @@ class PetProfile extends React.Component {
     }
 
     render() {
-        const {image, name, type, desc, status} = this.state.pet;
+        const { image, name, type, desc, status } = this.state.pet;
         return (
             <div className="pet-profile">
                 <div className="pet-images">
-                    <img src={image} alt=""/>
+                    <img src={image} alt="pet" />
                 </div>
                 <div className="pet-info">
-                    <div className="info-item">
-                        <div className="label">Кличка</div>
-                        <div className="value">{name}</div>
-                    </div>
-                    <div className="info-item">
-                        <div className="label">Тип</div>
-                        <div className="value">{type}</div>
-                    </div>
-                    <div className="info-item">
-                        <div className="label">Кто я</div>
-                        <div className="value">{desc}</div>
-                    </div>
-                    <div className="info-item">
-                        <div className="label">Где я</div>
-                        <div className="value">{status}</div>
-                    </div>
+                    <InfoItem label="Кличка" value={name} />
+                    <InfoItem label="Тип" value={type} />
+                    <InfoItem label="Кто я" value={desc} />
+                    <InfoItem label="Где я" value={status} />
                 </div>
             </div>
         );
