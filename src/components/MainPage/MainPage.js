@@ -1,5 +1,6 @@
 import React from 'react';
 
+import FeedbackForm from '../Forms/FeedbackForm/FeedbackForm'
 import './styles.css';
 
 function MainPage() {
@@ -17,7 +18,7 @@ function MainPage() {
                     <a href="https://vk.com/topic-149708458_35779829">Как нам помочь</a>
                 </div>
                 <div className="feedback form">
-                    Form
+                <FeedbackForm />
             </div>
             </div>
         </div>
