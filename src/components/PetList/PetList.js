@@ -1,7 +1,5 @@
 import React from 'react';
-import { Route } from "react-router-dom";
 
-import MainPage from '../MainPage/MainPage';
 import PetCard from '../PetCard/PetCard';
 import './styles.css';
 
@@ -15,7 +13,6 @@ function PetList(props) {
                     pet={props.pets[key]}
                 />
             ))}
-            <Route path="/catalog/:petId" component={MainPage} />
         </div>
     );
 }

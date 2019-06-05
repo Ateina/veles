@@ -6,6 +6,7 @@ import NotFound from './NotFound/NotFound';
 import Navigation from './Navigation/Navigation';
 import Login from './Login/Login';
 import Footer from './Footer/Footer';
+import PetProfile from './PetProfile/PetProfile';
 
 const App = () => (
     <BrowserRouter>
@@ -14,6 +15,7 @@ const App = () => (
             <Route exact path="/" component={MainPage} />
             <Route path="/catalog" component={Catalog} />
             <Route path="/login" component={Login}/>
+            <Route path="/petprofile/:petId" component={PetProfile} />
             <Route component={NotFound} />
         </Switch>
         <Footer />
