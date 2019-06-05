@@ -1,3 +1,38 @@
 .main-page{
     min-height: calc(100vh - 100px);
 }
+
+.container{
+    width: 80%;
+    margin: auto;
+    padding: 50px;
+}
+
+.description{
+    border: 1px green solid;
+    border-radius: 10px;
+    background-color: #DBF7DD;
+}
+
+.first-column {
+    width: 70%;
+    display: inline-block;
+}
+
+.help-column {
+    width: calc(30% - 50px);
+    vertical-align: top;
+    display: inline-block;
+    margin-left: 50px;
+}
+
+.link-to-help a:link{
+    width: 100%;
+    padding: 14px 25px;
+    text-align: center;
+    border: 1px red solid;
+    border-radius: 10px;
+    background-color: #E3B0C2;
+    text-decoration: none;
+    display: inline-block;
+}
