@@ -10,8 +10,7 @@ class Catalog extends Component {
         super(props);
         this.state = {
             petsInit: pets,
-            listOfPets: [],
-            petFilter: ''
+            listOfPets: []
         };
         this.filterPets = this.filterPets.bind(this);
     }
@@ -24,9 +23,16 @@ class Catalog extends Component {
 
     filterPets(e) {
         let filteredList = this.state.petsInit;
-        filteredList = filteredList.filter(pet => {
-            return pet.name.toLowerCase().indexOf(e.target.value) !== -1;
-        });
+        if(e.target.name === 'name'){
+            filteredList = filteredList.filter(pet => {
+                return pet.name.toLowerCase().indexOf(e.target.value) !== -1;
+            });
+        }
+        if(e.target.name === 'type'){
+            filteredList = filteredList.filter(pet => {
+                return pet.type.toLowerCase() === e.target.value.toLowerCase();
+            });
+        }
         this.setState({
             listOfPets: filteredList
         });
@@ -35,7 +41,7 @@ class Catalog extends Component {
     render() {
         return (
             <div className="catalog">
-                <CatalogFilters filterPets={this.filterPets}/>
+                <CatalogFilters filterPets={this.filterPets} filters={this.state.filters}/>
                 <PetList pets={this.state.listOfPets}/>
             </div>
         );
