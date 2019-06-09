@@ -10,7 +10,8 @@ class Catalog extends Component {
         super(props);
         this.state = {
             petsInit: pets,
-            listOfPets: []
+            listOfPets: [],
+            filters: []
         };
         this.filterPets = this.filterPets.bind(this);
     }
@@ -21,18 +22,46 @@ class Catalog extends Component {
         });
     }
 
-    filterPets(e) {
+    setFilterState(e) {
+        const filterType = e.target.type;
+        const filterName = e.target.name;
+        const filterValue = e.target.value;
+        const currentFiltersList = this.state.filters;
+        currentFiltersList.push(
+            {
+                type: filterType,
+                name: filterName,
+                value: filterValue
+            });
+        this.setState({
+            filters: currentFiltersList
+        });
+    }
+
+    applyFilters() {
+        const filters = this.state.filters;
         let filteredList = this.state.petsInit;
-        if (e.target.name === 'name') {
-            filteredList = filteredList.filter(pet => {
-                return pet.name.toLowerCase().indexOf(e.target.value) !== -1;
-            });
-        }
-        if (e.target.name === 'type') {
-            filteredList = filteredList.filter(pet => {
-                return pet.type.toLowerCase() === e.target.value.toLowerCase();
-            });
-        }
+        filters.forEach(filter => {
+            if (filter.type === 'text') {
+                filteredList = filteredList.filter(pet => {
+                    return pet[filter.name].toLowerCase().indexOf(filter.value) !== -1;
+                });
+            }
+            if (filter.type === 'checkbox') {
+                filteredList = filteredList.filter(pet => {
+                    if (pet[filter.name]) {
+                        return pet[filter.name].toLowerCase() === filter.value.toLowerCase();
+                    }
+                    return null;
+                });
+            }
+        });
+        return filteredList;
+    }
+
+    filterPets(e) {
+        this.setFilterState(e);
+        const filteredList = this.applyFilters();
         this.setState({
             listOfPets: filteredList
         });

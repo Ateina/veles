@@ -1,24 +1,28 @@
 import React from 'react';
 
 function CheckBoxFilter(props) {
-    const { label, filteredValues, filterName, filterPets } = props;
+    const { label, filteredValues, filterName, isChecked, filterPets } = props;
 
     return (
         <div className="filter-checkbox">
             <fieldset>
                 <legend>{label}</legend>
                 {filteredValues.map(value => {
-                    return (
-                        <div>
-                            <input
-                                type="checkbox"
-                                id={value}
-                                name={filterName}
-                                value={value}
-                                onChange={filterPets} />
-                            <label>{value}</label>
-                        </div>
-                    )
+                    if (value) {
+                        return (
+                            <div key={value}>
+                                <input
+                                    type="checkbox"
+                                    id={value}
+                                    name={filterName}
+                                    value={value}
+                                    checked={isChecked}
+                                    onChange={filterPets} />
+                                <label>{value}</label>
+                            </div>
+                        )
+                    }
+                    return null;
                 })}
             </fieldset>
         </div>)
