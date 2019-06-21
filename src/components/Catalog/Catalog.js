@@ -26,13 +26,20 @@ class Catalog extends Component {
         const filterType = e.target.type;
         const filterName = e.target.name;
         const filterValue = e.target.value;
-        const currentFiltersList = this.state.filters;
-        currentFiltersList.push(
-            {
-                type: filterType,
-                name: filterName,
-                value: filterValue
-            });
+        const filterChecked = e.target.checked;
+        let currentFiltersList = this.state.filters;
+        if(!filterChecked && filterType === 'checkbox'){
+            currentFiltersList = currentFiltersList.filter(item => item.name !== filterName)
+        }
+        else{
+            currentFiltersList.push(
+                {
+                    type: filterType,
+                    name: filterName,
+                    value: filterValue,
+                    checked: filterChecked
+                });
+        }
         this.setState({
             filters: currentFiltersList
         });

@@ -19,6 +19,7 @@ function CatalogFilters(props) {
             <CheckBoxFilter
                 label="Пол"
                 filterName="sex"
+                isChecked={false}
                 filteredValues={ArrayUtility.RemoveDuplicates(props.pets, 'sex')}
                 filterPets={props.filterPets} />
         </div>
