@@ -71,7 +71,7 @@ class Catalog extends Component {
         return (
             <div className="catalog">
                 <CatalogFilters
-                    pets={this.state.listOfPets}
+                    pets={this.state.petsInit}
                     filterPets={this.filterPets} />
                 <PetList
                     pets={this.state.listOfPets} />
