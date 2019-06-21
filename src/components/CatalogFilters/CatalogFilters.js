@@ -14,12 +14,12 @@ function CatalogFilters(props) {
             <CheckBoxFilter
                 label="Тип"
                 filterName="type"
-                filteredValues={ArrayUtility.RemoveDublicates(props.pets, 'type')}
+                filteredValues={ArrayUtility.RemoveDuplicates(props.pets, 'type')}
                 filterPets={props.filterPets} />
             <CheckBoxFilter
                 label="Пол"
                 filterName="sex"
-                filteredValues={ArrayUtility.RemoveDublicates(props.pets, 'sex')}
+                filteredValues={ArrayUtility.RemoveDuplicates(props.pets, 'sex')}
                 filterPets={props.filterPets} />
         </div>
     );
