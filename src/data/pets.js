@@ -9,10 +9,10 @@ const pets = [
         sex: "fem",
         sterilized: true,
         vactinized: true,
-        friendy_with: ['дети', 'другие животные'],
+        friendly_with: ['дети', 'другие животные'],
         special_pet: false,
-        prefered_place_to_live: [],
-        contsacts: ''
+        preferred_place_to_live: [],
+        contacts: ''
     },
     {
         name: "Name 2",
@@ -23,10 +23,10 @@ const pets = [
         sex: "fem",
         sterilized: true,
         vactinized: true,
-        friendy_with: ['дети', 'другие животные'],
+        friendly_with: ['дети', 'другие животные'],
         special_pet: false,
-        prefered_place_to_live: [],
-        contsacts: ''
+        preferred_place_to_live: [],
+        contacts: ''
     },
     {
         name: "Fiona",
@@ -38,10 +38,10 @@ const pets = [
         sex: "fem",
         sterilized: true,
         vactinized: true,
-        friendy_with: ['дети', 'другие животные'],
+        friendly_with: ['дети', 'другие животные'],
         special_pet: false,
-        prefered_place_to_live: [],
-        contsacts: ''
+        preferred_place_to_live: [],
+        contacts: ''
     },
     {
         name: "Rich",
@@ -53,10 +53,10 @@ const pets = [
         sex: "male",
         sterilized: true,
         vactinized: true,
-        friendy_with: ['дети', 'другие животные'],
+        friendly_with: ['дети', 'другие животные'],
         special_pet: false,
-        prefered_place_to_live: [],
-        contsacts: ''
+        preferred_place_to_live: [],
+        contacts: ''
     },
     {
         name: "Sandy",
@@ -68,10 +68,10 @@ const pets = [
         sex: "fem",
         sterilized: true,
         vactinized: true,
-        friendy_with: ['дети', 'другие животные'],
+        friendly_with: ['дети', 'другие животные'],
         special_pet: false,
-        prefered_place_to_live: [],
-        contsacts: ''
+        preferred_place_to_live: [],
+        contacts: ''
     },
     {
         name: "Lolita",
@@ -83,10 +83,10 @@ const pets = [
         sex: "fem",
         sterilized: true,
         vactinized: true,
-        friendy_with: ['дети', 'другие животные'],
+        friendly_with: ['дети', 'другие животные'],
         special_pet: false,
-        prefered_place_to_live: [],
-        contsacts: ''
+        preferred_place_to_live: [],
+        contacts: ''
     },
     {
         name: "Dasha",
