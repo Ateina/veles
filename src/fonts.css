@@ -1,0 +1,9 @@
+/* @font-face {
+  font-family: 'Ubuntu', sans-serif;
+  src: url('./Fonts/UbuntuCondensed/UbuntuCondensed.ttf');
+} разобраться позже*/ 
+
+@font-face {
+  font-family: 'Comfortaa';
+  src: url('./Fonts/Comfortaa/Comfortaa.ttf')
+}
