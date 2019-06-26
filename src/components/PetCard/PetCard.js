@@ -15,7 +15,7 @@ function PetCard({ pet }) {
             state: { pet }
           }}>
             <div className="pet-card">
-                <img src={pet.image ? pet.image : 'images/no-photo.jpg'} alt="pet" />
+                <img src={pet.image ? pet.image[0] : 'images/no-photo.jpg'} alt="pet" />
                 <span className="name">{pet.name}</span>
             </div>
         </Link>

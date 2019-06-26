@@ -2,7 +2,7 @@ const pets = [
     {
         name: "Kisa",
         type: "cat",
-        image: "/images/kisa.jpg",
+        image: ["/images/kisa.jpg"],
         desc: "Description.",
         status: "shelter",
         age: 4,
@@ -31,7 +31,7 @@ const pets = [
     {
         name: "Fiona",
         type: "dog",
-        image: "/images/fiona.jpg",
+        image: ["/images/fiona.jpg"],
         desc: "Description.",
         status: "shelter",
         age: 4,
@@ -46,7 +46,7 @@ const pets = [
     {
         name: "Rich",
         type: "dog",
-        image: "/images/rich.jpg",
+        image: ["/images/rich.jpg"],
         desc: "Description.",
         status: "shelter",
         age: 4,
@@ -61,7 +61,12 @@ const pets = [
     {
         name: "Sandy",
         type: "dog",
-        image: "/images/sandy.jpg",
+        image: [
+            "/images/sandy.jpg", 
+            "/images/sandy2.jpg",
+            "/images/sandy3.jpg",
+            "/images/sandy4.jpg",
+        ],
         desc: "Description.",
         status: "shelter",
         age: 4,
@@ -76,7 +81,7 @@ const pets = [
     {
         name: "Lolita",
         type: "cat",
-        image: "/images/lolita.jpg",
+        image: ["/images/lolita.jpg"],
         desc: "Description.",
         status: "shelter",
         age: 4,
@@ -91,21 +96,21 @@ const pets = [
     {
         name: "Dasha",
         type: "cat",
-        image: "/images/dasha.jpg",
+        image: ["/images/dasha.jpg"],
         desc: "Description.",
         status: "shelter"
     },
     {
         name: "Sabrina",
         type: "cat",
-        image: "/images/sabrina.jpg",
+        image: ["/images/sabrina.jpg"],
         desc: "Description.",
         status: "shelter"
     },
     {
         name: "Luna",
         type: "cat",
-        image: "/images/luna.jpg",
+        image: ["/images/luna.jpg"],
         desc: "Description.",
         status: "shelter"
     }

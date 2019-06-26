@@ -1,4 +1,6 @@
 import React from 'react';
+import ImageGallery from 'react-image-gallery';
+import "react-image-gallery/styles/css/image-gallery.css";
 
 import InfoItem from './InfoItem/InfoItem';
 import './styles.css'
@@ -10,10 +12,22 @@ class PetProfile extends React.Component {
 
     render() {
         const { image, name, type, desc, status } = this.state.pet;
+        const images = [];
+        image.forEach(img => {
+            images.push({
+                original: img
+            })
+        })
         return (
             <div className="pet-profile">
                 <div className="pet-images">
-                    <img src={image} alt="pet" />
+                    <ImageGallery
+                        items={images}
+                        showPlayButton={false}
+                        showFullscreenButton={false}
+                        showThumbnails={false}
+                        showBullets={true}
+                    />
                 </div>
                 <div className="pet-info">
                     <InfoItem label="Кличка" value={name} />
