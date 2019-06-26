@@ -1,6 +1,6 @@
 const pets = [
     {
-        name: "Kisa",
+        name: "Киса",
         type: "cat",
         image: ["/images/kisa.jpg"],
         desc: "Description.",
@@ -29,7 +29,7 @@ const pets = [
         contacts: ''
     },
     {
-        name: "Fiona",
+        name: "Фиона",
         type: "dog",
         image: ["/images/fiona.jpg"],
         desc: "Description.",
@@ -44,7 +44,7 @@ const pets = [
         contacts: ''
     },
     {
-        name: "Rich",
+        name: "Гир",
         type: "dog",
         image: ["/images/rich.jpg"],
         desc: "Description.",
@@ -59,7 +59,7 @@ const pets = [
         contacts: ''
     },
     {
-        name: "Sandy",
+        name: "Сэнди",
         type: "dog",
         image: [
             "/images/sandy.jpg", 
@@ -79,7 +79,7 @@ const pets = [
         contacts: ''
     },
     {
-        name: "Lolita",
+        name: "Лолита",
         type: "cat",
         image: ["/images/lolita.jpg"],
         desc: "Description.",
@@ -94,21 +94,21 @@ const pets = [
         contacts: ''
     },
     {
-        name: "Dasha",
+        name: "Даша",
         type: "cat",
         image: ["/images/dasha.jpg"],
         desc: "Description.",
         status: "shelter"
     },
     {
-        name: "Sabrina",
+        name: "Сабрина",
         type: "cat",
         image: ["/images/sabrina.jpg"],
         desc: "Description.",
         status: "shelter"
     },
     {
-        name: "Luna",
+        name: "Луна",
         type: "cat",
         image: ["/images/luna.jpg"],
         desc: "Description.",
