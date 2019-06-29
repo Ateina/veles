@@ -28,25 +28,35 @@ class Catalog extends Component {
         const filterValue = e.target.value;
         const filterChecked = e.target.checked;
         let currentFiltersList = this.state.filters;
+        const currentFilter = currentFiltersList.find(item => item.name === filterName);
         if(!filterChecked && filterType === 'checkbox'){
-            currentFiltersList = currentFiltersList.filter(item => item.name !== filterName)
+            currentFilter.values = currentFilter.values.filter(value => value !== filterValue)
         }
         else{
-            currentFiltersList.push(
-                {
-                    type: filterType,
-                    name: filterName,
-                    value: filterValue,
-                    checked: filterChecked
-                });
+            if(!currentFilter){
+                currentFiltersList.push(
+                    {
+                        type: filterType,
+                        name: filterName,
+                        value: filterValue,
+                        values: [filterValue],
+                        checked: filterChecked
+                    });
+            }
+            else{
+                currentFilter.values.push(filterValue);
+            }
         }
+
         this.setState({
             filters: currentFiltersList
         });
+        return currentFiltersList;
     }
 
-    applyFilters() {
-        const filters = this.state.filters;
+    applyFilters(currentFiltersList) {
+        // const filters = this.state.filters;
+        const filters = currentFiltersList;
         let filteredList = this.state.petsInit;
         filters.forEach(filter => {
             if (filter.type === 'text') {
@@ -55,20 +65,22 @@ class Catalog extends Component {
                 });
             }
             if (filter.type === 'checkbox') {
-                filteredList = filteredList.filter(pet => {
-                    if (pet[filter.name]) {
-                        return pet[filter.name].toLowerCase() === filter.value.toLowerCase();
-                    }
-                    return null;
-                });
+                if(filter.values.length){
+                    filteredList = filteredList.filter(pet => {
+                        if (pet[filter.name]) {
+                            return filter.values.some(value => value.toLowerCase() === pet[filter.name].toLowerCase())
+                        }
+                        return null;
+                    });
+                }
             }
         });
         return filteredList;
     }
 
     filterPets(e) {
-        this.setFilterState(e);
-        const filteredList = this.applyFilters();
+        const currentFiltersList = this.setFilterState(e);
+        const filteredList = this.applyFilters(currentFiltersList);
         this.setState({
             listOfPets: filteredList
         });
