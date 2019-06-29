@@ -11,7 +11,7 @@ const pets = [
         vaccinated: true,
         friendly_with: ['дети', 'другие животные'],
         special_pet: false,
-        preferred_place_to_live: [],
+        preferred_place_to_live: ['квартира'],
         contacts: ''
     },
     {
@@ -40,7 +40,7 @@ const pets = [
         vaccinated : true,
         friendly_with: ['дети', 'другие животные'],
         special_pet: false,
-        preferred_place_to_live: [],
+        preferred_place_to_live: ['частный дом'],
         contacts: ''
     },
     {
@@ -55,7 +55,7 @@ const pets = [
         vaccinated : true,
         friendly_with: ['дети', 'другие животные'],
         special_pet: false,
-        preferred_place_to_live: [],
+        preferred_place_to_live: ['частный дом'],
         contacts: ''
     },
     {
@@ -98,14 +98,16 @@ const pets = [
         type: "cat",
         image: ["/images/dasha.jpg"],
         desc: "Description.",
-        status: "shelter"
+        status: "shelter",
+        friendly_with: ['дети']
     },
     {
         name: "Сабрина",
         type: "cat",
         image: ["/images/sabrina.jpg"],
         desc: "Description.",
-        status: "shelter"
+        status: "shelter",
+        friendly_with: ['другие животные'],
     },
     {
         name: "Луна",

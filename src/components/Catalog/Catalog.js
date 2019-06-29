@@ -68,7 +68,12 @@ class Catalog extends Component {
                 if(filter.values.length){
                     filteredList = filteredList.filter(pet => {
                         if (pet[filter.name]) {
-                            return filter.values.some(value => value.toLowerCase() === pet[filter.name].toLowerCase())
+                            if(filter.name === 'friendly_with' || filter.name === 'preferred_place_to_live'){
+                                return filter.values.some(value =>  pet[filter.name].find(elem => elem ===value))
+                            }
+                            else{
+                                return filter.values.some(value => value.toLowerCase() === pet[filter.name].toLowerCase())
+                            }
                         }
                         return null;
                     });
