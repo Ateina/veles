@@ -1,0 +1,6 @@
+@mixin background-gradient($position, $args...){
+    background: -moz-linear-gradient($position, $args);
+    background: -o-linear-gradient($position, $args);
+    background: -ms-linear-gradient($position, $args);
+    background: linear-gradient(to bottom, $args);
+}
