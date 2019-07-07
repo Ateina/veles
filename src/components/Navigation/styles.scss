@@ -138,8 +138,8 @@ input[type="checkbox" i] {
         
                 padding: 0;
                 border-bottom: none;
-                @include transform(translateX(0));
                 opacity: 1;
+                @include transform(translateX(0));
             }
         }
 
