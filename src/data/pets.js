@@ -61,19 +61,20 @@ const pets = [
     {
         name: "Сэнди",
         type: "dog",
+        temper: ['игривая', 'веселая', 'любопытная'],
         image: [
             "/images/sandy.jpg", 
             "/images/sandy2.jpg",
             "/images/sandy3.jpg",
             "/images/sandy4.jpg",
         ],
-        desc: "Description.",
-        status: "shelter",
+        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dignissim in justo ut pellentesque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam ullamcorper, mauris ac egestas volutpat, sapien leo suscipit felis, vel gravida libero libero vitae elit. Donec non lobortis lectus. Vestibulum at aliquet leo. Suspendisse aliquam lorem at pretium finibus. Etiam suscipit pellentesque facilisis. Donec elementum nisi eu mi commodo consectetur. Nullam lorem leo, dictum vitae eros in, mattis aliquam ante. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce sit amet enim tellus.",
+        status: "В приюте",
         age: 4,
         sex: "fem",
         sterilized: true,
         vaccinated : true,
-        friendly_with: ['дети', 'другие животные'],
+        friendly_with: ['детьми'],
         special_pet: false,
         preferred_place_to_live: [],
         contacts: ''

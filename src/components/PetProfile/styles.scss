@@ -1,0 +1,31 @@
+.pet-profile{
+    min-height: calc(100vh - 100px);
+    display: flex;
+
+    .pet-info{
+        margin: 30px;
+        width: 45%;
+
+        .pet-name{
+            font-size: 30px;
+            font-style: oblique;
+        }
+
+        .short-info{
+            display: flex;
+            margin: 20px 0;
+        }
+    }
+
+    .pet-images{
+        background-color: darkolivegreen;
+        display: flex;
+        align-items: center;
+        width: 50%;
+    }
+    
+    .image-gallery{
+        margin: auto;
+    }
+}
+

@@ -2,8 +2,8 @@ import React from 'react';
 import ImageGallery from 'react-image-gallery';
 import "react-image-gallery/styles/css/image-gallery.css";
 
-import InfoItem from './InfoItem/InfoItem';
-import './styles.css'
+import ShortInfo from './ShortInfo/ShortInfo';
+import './styles.scss'
 
 class PetProfile extends React.Component {
     state = {
@@ -11,7 +11,17 @@ class PetProfile extends React.Component {
     }
 
     render() {
-        const { image, name, type, desc, status } = this.state.pet;
+        const {
+            image,
+            name,
+            sex,
+            type,
+            desc,
+            status,
+            temper,
+            sterilized,
+            vaccinated
+        } = this.state.pet;
         const images = [];
         image.forEach(img => {
             images.push({
@@ -30,10 +40,15 @@ class PetProfile extends React.Component {
                     />
                 </div>
                 <div className="pet-info">
-                    <InfoItem label="Кличка" value={name} />
-                    <InfoItem label="Тип" value={type} />
-                    <InfoItem label="Кто я" value={desc} />
-                    <InfoItem label="Где я" value={status} />
+                    <div className="pet-name">{name}</div>
+                    <ShortInfo
+                        temper={temper}
+                        sex={sex}
+                        sterilized={sterilized}
+                        vaccinated={vaccinated}
+                        status={status}
+                    />
+                    <div className="pet-desc">{desc}</div>
                 </div>
             </div>
         );
