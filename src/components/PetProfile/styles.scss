@@ -1,3 +1,7 @@
+@import '../../commonStyles/variables.scss';
+@import '../../commonStyles/scss/fontawesome.scss';
+@import "../../commonStyles/scss/solid.scss";
+
 .pet-profile{
     min-height: calc(100vh - 100px);
     display: flex;
@@ -13,12 +17,49 @@
 
         .short-info{
             display: flex;
+            justify-content: space-between;
             margin: 20px 0;
+
+            .column{
+                display: flex;
+
+                .icon{
+                    font-size: 50px;
+                    color: green;
+                    margin-right: 5px;
+                    
+                    @extend %fa-icon;
+                    @extend .fas;
+                }
+
+                &.temper{
+                    .icon:before {
+                            content: fa-content($fa-var-dog);
+                    }
+                }
+
+                &.special-characteristics{
+                    .icon:before {
+                            content: fa-content($fa-var-check-circle);
+                    }
+                }
+
+                &.current-place{
+                    .icon:before {
+                        content: fa-content($fa-var-map-marker-alt);
+                    }
+                }
+
+                li{
+                    margin: 3px 0;
+                    text-transform: capitalize; 
+                }
+            }
         }
     }
 
     .pet-images{
-        background-color: darkolivegreen;
+        background-color: green;
         display: flex;
         align-items: center;
         width: 50%;
@@ -28,4 +69,3 @@
         margin: auto;
     }
 }
-

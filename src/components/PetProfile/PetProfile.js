@@ -15,12 +15,12 @@ class PetProfile extends React.Component {
             image,
             name,
             sex,
-            type,
             desc,
             status,
             temper,
             sterilized,
-            vaccinated
+            vaccinated,
+            friendly_with
         } = this.state.pet;
         const images = [];
         image.forEach(img => {
@@ -47,6 +47,7 @@ class PetProfile extends React.Component {
                         sterilized={sterilized}
                         vaccinated={vaccinated}
                         status={status}
+                        friendly_with={friendly_with}
                     />
                     <div className="pet-desc">{desc}</div>
                 </div>
