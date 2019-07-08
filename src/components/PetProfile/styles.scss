@@ -33,9 +33,12 @@
                 }
 
                 &.temper{
-                    .icon:before {
+                    .dog.icon:before {
                             content: fa-content($fa-var-dog);
                     }
+                    .cat.icon:before {
+                        content: fa-content($fa-var-cat);
+                }
                 }
 
                 &.special-characteristics{

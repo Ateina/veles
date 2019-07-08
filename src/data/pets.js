@@ -4,11 +4,12 @@ const pets = [
         type: "cat",
         image: ["/images/kisa.jpg"],
         desc: "Description.",
-        status: "shelter",
+        status: "Приют",
         age: 4,
         sex: "fem",
         sterilized: true,
         vaccinated: true,
+        temper: ['веселая', 'уютная', 'нежная'],
         friendly_with: ['дети', 'другие животные'],
         special_pet: false,
         preferred_place_to_live: ['квартира'],
@@ -18,7 +19,7 @@ const pets = [
         name: "Name 2",
         type: "cat",
         desc: "Description.",
-        status: "shelter",
+        status: "Приют",
         age: 4,
         sex: "fem",
         sterilized: true,
@@ -33,7 +34,7 @@ const pets = [
         type: "dog",
         image: ["/images/fiona.jpg"],
         desc: "Description.",
-        status: "shelter",
+        status: "Приют",
         age: 4,
         sex: "fem",
         sterilized: true,
@@ -48,7 +49,7 @@ const pets = [
         type: "dog",
         image: ["/images/rich.jpg"],
         desc: "Description.",
-        status: "shelter",
+        status: "Приют",
         age: 4,
         sex: "male",
         sterilized: true,
@@ -84,7 +85,7 @@ const pets = [
         type: "cat",
         image: ["/images/lolita.jpg"],
         desc: "Description.",
-        status: "shelter",
+        status: "Приют",
         age: 4,
         sex: "fem",
         sterilized: true,
@@ -99,7 +100,7 @@ const pets = [
         type: "cat",
         image: ["/images/dasha.jpg"],
         desc: "Description.",
-        status: "shelter",
+        status: "Приют",
         friendly_with: ['дети']
     },
     {
@@ -107,7 +108,7 @@ const pets = [
         type: "cat",
         image: ["/images/sabrina.jpg"],
         desc: "Description.",
-        status: "shelter",
+        status: "Приют",
         friendly_with: ['другие животные'],
     },
     {
@@ -115,7 +116,7 @@ const pets = [
         type: "cat",
         image: ["/images/luna.jpg"],
         desc: "Description.",
-        status: "shelter"
+        status: "Приют"
     }
 ]
 

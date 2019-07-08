@@ -15,6 +15,7 @@ class PetProfile extends React.Component {
             image,
             name,
             sex,
+            type,
             desc,
             status,
             temper,
@@ -42,8 +43,9 @@ class PetProfile extends React.Component {
                 <div className="pet-info">
                     <div className="pet-name">{name}</div>
                     <ShortInfo
-                        temper={temper}
+                        type={type}
                         sex={sex}
+                        temper={temper}
                         sterilized={sterilized}
                         vaccinated={vaccinated}
                         status={status}
