@@ -2,7 +2,7 @@ import React from 'react';
 import ImageGallery from 'react-image-gallery';
 import "react-image-gallery/styles/css/image-gallery.css";
 
-import ShortInfo from './ShortInfo/ShortInfo';
+import ShortInfo from './PageComponents/ShortInfo';
 import './styles.scss'
 
 class PetProfile extends React.Component {
