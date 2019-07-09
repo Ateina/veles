@@ -60,7 +60,7 @@ const pets = [
         contacts: ''
     },
     {
-        name: "Сэнди",
+        name: "Сенди",
         type: "dog",
         temper: ['игривая', 'веселая', 'любопытная'],
         image: [
@@ -69,7 +69,7 @@ const pets = [
             "/images/sandy3.jpg",
             "/images/sandy4.jpg",
         ],
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dignissim in justo ut pellentesque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam ullamcorper, mauris ac egestas volutpat, sapien leo suscipit felis, vel gravida libero libero vitae elit. Donec non lobortis lectus. Vestibulum at aliquet leo. Suspendisse aliquam lorem at pretium finibus. Etiam suscipit pellentesque facilisis. Donec elementum nisi eu mi commodo consectetur. Nullam lorem leo, dictum vitae eros in, mattis aliquam ante. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce sit amet enim tellus.",
+        desc: "Сенди - замечательная, искренняя, задорная девочка, местами по-щенячьи инфантильная, смотрящая, с любовью, не в глаза, а на колени зовущего, активная и требующая внимания. В этом меховом комочке столько детского восторга и любви, что если вы проявите немного понимания и терпения, то без проблем найдете подход, так как нашли его мы. Если вы прониклись историей Сенди и хотите познакомиться ближе с особенной собакой, чтобы оценить свои силы в желании подарить ей дом, звоните и приходите знакомиться ",
         status: "В приюте",
         age: 4,
         sex: "fem",
