@@ -6,7 +6,7 @@ import VaccinatedProperty from './VaccinatedProperty';
 function ColumnSpecialCharacteristics(props) {
     return (<div className="column special-characteristics">
         <div className="icon"></div>
-        <ul>
+        <ul className="list-characteristics">
             <SterilizedProperty sex={props.sex} sterilized={props.sterilized} />
             <VaccinatedProperty sex={props.sex} vaccinated={props.vaccinated} />
             <li>Хорошо ладит с {props.friendly_with}</li>

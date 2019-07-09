@@ -4,7 +4,7 @@ function ColumnCurrentLocation(props) {
     return (
         <div className="column current-place">
             <div className="icon"></div>
-            {props.status}
+            <div className="location">{props.status}</div>
         </div>)
 }
 
