@@ -24,11 +24,13 @@ class PetProfile extends React.Component {
             friendly_with
         } = this.state.pet;
         const images = [];
-        image.forEach(img => {
-            images.push({
-                original: img
+        if (image) {
+            image.forEach(img => {
+                images.push({
+                    original: img
+                })
             })
-        })
+        }
         return (
             <div className="pet-profile">
                 <div className="pet-images">
