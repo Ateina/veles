@@ -7,7 +7,7 @@ function ColumnTemper(props) {
         temper = <React.Fragment>
             <div className="column temper">
                 <div className={"icon " + props.type}></div>
-                <ul>
+                <ul className="list-characteristics">
                     {Object.keys(props.temper).map(key => (
                         <li
                             key={key}

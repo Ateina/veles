@@ -30,6 +30,10 @@
                     
                     @extend %fa-icon;
                     @extend .fas;
+
+                    &:before{
+                        vertical-align: middle;
+                    }
                 }
 
                 &.temper{
@@ -51,6 +55,13 @@
                     .icon:before {
                         content: fa-content($fa-var-map-marker-alt);
                     }
+                    .location{
+                        margin: auto;
+                    }
+                }
+
+                .list-characteristics{
+                    margin: auto;
                 }
 
                 li{
