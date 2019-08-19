@@ -1,7 +1,7 @@
 import React from 'react';
 
 import FeedbackForm from '../Forms/FeedbackForm/FeedbackForm'
-import './styles.css';
+import './styles.scss';
 
 function MainPage() {
     return (<div className="main-page">
@@ -17,9 +17,7 @@ function MainPage() {
                 <div className="button link-to-help">
                     <a href="https://vk.com/topic-149708458_35779829">Как нам помочь</a>
                 </div>
-                <div className="feedback form">
                 <FeedbackForm />
-            </div>
             </div>
         </div>
     </div>)
