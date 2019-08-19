@@ -1,18 +1,16 @@
 import React from 'react';
-import { Formik } from 'formik';
+import { Formik, Form, Field, ErrorMessage } from 'formik';
 
 const FeedbackForm = () => (
     <div>
         <h1>Свяжитесь с нами, если есть вопросы!</h1>
         <Formik
             initialValues=
-            {
-                {
-                    name: '',
-                    email: '',
-                    userRequest: ''
-                }
-            }
+            {{
+                name: '',
+                email: '',
+                userRequest: ''
+            }}
             validate={values => {
                 let errors = {};
                 if (!values.email) {
@@ -31,45 +29,19 @@ const FeedbackForm = () => (
                 }, 400);
             }}
         >
-            {({
-                values,
-                errors,
-                touched,
-                handleChange,
-                handleBlur,
-                handleSubmit,
-                isSubmitting
-            }) => (
-                    <form onSubmit={handleSubmit}>
-                        <input
-                            type="name"
-                            name="name"
-                            onChange={handleChange}
-                            onBlur={handleBlur}
-                            value={values.name}
-                        />
-                        {errors.password && touched.password && errors.password}
-                        <input
-                            type="email"
-                            name="email"
-                            onChange={handleChange}
-                            onBlur={handleBlur}
-                            value={values.email}
-                        />
-                        {errors.email && touched.email && errors.email}
-                        <input
-                            type="userRequest"
-                            name="userRequest"
-                            onChange={handleChange}
-                            onBlur={handleBlur}
-                            value={values.userRequest}
-                        />
-                        {errors.email && touched.email && errors.email}
-                        <button type="submit" disabled={isSubmitting}>
-                            Submit
-                        </button>
-                    </form>
-                )}
+        {({ isSubmitting }) => (
+            <Form>
+                <Field type="text" name="name" />
+                <ErrorMessage name="name" component="div" />
+                <Field type="email" name="email" />
+                <ErrorMessage name="email" component="div" />
+                <Field type="text" name="userRequest" />
+                <ErrorMessage name="userRequest" component="div" />
+                <button type="submit" disabled={isSubmitting}>
+                    Отправить
+                </button>
+            </Form>
+        )}
         </Formik>
     </div>
 );
