@@ -9,9 +9,11 @@ function MainPage() {
         <div className="container">
             <div className="main-column">
                 <div className="description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dignissim in justo ut pellentesque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam ullamcorper, mauris ac egestas volutpat, sapien leo suscipit felis, vel gravida libero libero vitae elit. Donec non lobortis lectus. Vestibulum at aliquet leo. Suspendisse aliquam lorem at pretium finibus. Etiam suscipit pellentesque facilisis. Donec elementum nisi eu mi commodo consectetur. Nullam lorem leo, dictum vitae eros in, mattis aliquam ante. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-                    Fusce sit amet enim tellus. Proin aliquet neque sed ipsum finibus, sed porta nunc rutrum. In at convallis libero. Proin sit amet mi porttitor arcu tincidunt congue id vitae tellus. Nunc auctor, dolor in malesuada congue, libero quam auctor erat, nec fermentum felis mauris quis leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent venenatis sit amet risus vel lobortis. Maecenas sed mattis nibh. Nam justo orci, ultrices id massa sollicitudin, feugiat cursus lectus. Curabitur condimentum enim ante, at volutpat lorem commodo id. Fusce nec faucibus magna.
-                    Vivamus dui velit, semper a diam ac, scelerisque faucibus lorem. Proin congue tempor felis. Aliquam mi enim, pulvinar non sagittis vitae, dignissim at dolor. Vivamus venenatis mauris lacus, non pulvinar ligula pellentesque at. Praesent dictum ligula a neque posuere blandit. Proin rutrum sed turpis eget congue. Phasellus eget maximus enim. Phasellus interdum placerat ex ac mattis.
+                Наш домик объединил группу людей, которые очень хотят внести свой вклад в изменение ситуации с бездомными животными в нашем городе.
+                Сейчас под крышей домика нашли приют 15 собак и более 70 котов (из них 29 это котята, 14 особенных животных - 2 собаки и 12 котов), 3 собаки и 1 кот на квартирных передержках. Так же домик заботиться о голубях с птенцами в заброшенной голубятне. Все они разного возраста, с разными судьбами, с кураторами и без. Постепенно мы расскажем их истории.
+                А пока, мы приглашаем всех неравнодушных присоединиться к нам, при чем не только на просторах интернета. 
+                Мы будем очень рады увидеть вас на пороге приюта.
+                Приходите, мы очень ждём Вас!
                 </div>
             </div>
             <div className="help-column">
