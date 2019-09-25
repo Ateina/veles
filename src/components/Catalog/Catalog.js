@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 
-import PetList from '../PetList/PetList';
-import CatalogFilters from '../CatalogFilters/CatalogFilters';
+// import PetList from '../PetList/PetList';
+// import CatalogFilters from '../CatalogFilters/CatalogFilters';
 import pets from '../../data/pets';
 import './styles.css';
+import base from "../../base";
 
 class Catalog extends Component {
     constructor(props) {
@@ -20,6 +21,9 @@ class Catalog extends Component {
         this.setState({
             listOfPets: this.state.petsInit,
         });
+        base.ref("pets/catalog").push(
+             pets
+        )
     }
 
     setFilterState(e) {
@@ -94,11 +98,11 @@ class Catalog extends Component {
     render() {
         return (
             <div className="catalog">
-                <CatalogFilters
+                {/* <CatalogFilters
                     pets={this.state.petsInit}
                     filterPets={this.filterPets} />
                 <PetList
-                    pets={this.state.listOfPets} />
+                    pets={this.state.listOfPets} /> */}
             </div>
         );
     }
