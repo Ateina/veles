@@ -1,0 +1,30 @@
+.pet-card{
+    width: 300px;
+    border: 1px green solid;
+    margin-bottom: 20px;
+    -webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
+    page-break-inside: avoid; /* Firefox */
+    break-inside: avoid;
+
+    img{
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .pet-short-info{
+        text-align: center;
+        height: 30px;
+        line-height: 30px;
+        color: #02501a;
+    }
+}
+
+a{
+    &:link,
+    &:hover,
+    &:active,
+    &:visited {
+        text-decoration: none;
+    }
+}

@@ -1,5 +1,5 @@
 .list-of-pets {
     margin: 50px;
-    column-count: auto;
-    column-width: 300px;
+    display: flex;
+    flex-wrap: wrap;
 }
