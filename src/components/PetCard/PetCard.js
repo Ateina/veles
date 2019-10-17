@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
-import './styles.css';
+import './styles.scss';
 
 PetCard.propTypes = {
     pet: PropTypes.object
@@ -10,15 +10,15 @@ PetCard.propTypes = {
 
 function PetCard({ pet }) {
     return (
-        <Link to={{
-            pathname: `petprofile/${pet.name}`,
-            state: { pet }
-          }}>
-            <div className="pet-card">
+        <div className="pet-card">
+            <Link to={{
+                pathname: `petprofile/${pet.name}`,
+                state: { pet }
+            }}>
                 <img src={pet.image ? pet.image[0] : 'images/no-photo.jpg'} alt="pet" />
-                <span className="name">{pet.name}</span>
-            </div>
-        </Link>
+                <div className="pet-short-info">{pet.name}</div>
+            </Link>
+        </div>
     );
 }
 

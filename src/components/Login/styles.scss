@@ -1,0 +1,35 @@
+.login-page{
+    min-height: calc(100vh - 100px);
+
+    .login-form{
+        width: 60%;
+        margin: auto;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+
+        .label{
+            margin: auto;
+        }
+
+        .fields{
+            display: flex;
+            flex-direction: column;
+    
+            input {
+                margin-top: 18px;
+                width: calc(100% - 4px);
+                height: 30px;
+            }
+
+            .submit-button{
+                width: 100%;
+                height: 36px;
+                background: #96c09a;
+                border: none;
+                margin-top: 15px;
+                cursor: pointer;
+            }
+        }
+    }
+}
