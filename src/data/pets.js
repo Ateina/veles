@@ -1,5 +1,5 @@
-const pets = {
-        pet1: {
+const pets = [
+        {
             name: "Киса",
             type: "cat",
             image: ["/images/kisa.jpg"],
@@ -15,7 +15,7 @@ const pets = {
             preferred_place_to_live: ['квартира'],
             contacts: ''
         },
-        pet2: {
+        {
             name: "Name 2",
             type: "cat",
             desc: "Description.",
@@ -29,7 +29,7 @@ const pets = {
             preferred_place_to_live: [],
             contacts: ''
         },
-        pet3: {
+        {
             name: "Фиона",
             type: "dog",
             image: ["/images/fiona.jpg"],
@@ -44,7 +44,7 @@ const pets = {
             preferred_place_to_live: ['частный дом'],
             contacts: ''
         },
-        pet4: {
+        {
             name: "Гир",
             type: "dog",
             image: ["/images/rich.jpg"],
@@ -59,7 +59,7 @@ const pets = {
             preferred_place_to_live: ['частный дом'],
             contacts: ''
         },
-        pet5: {
+        {
             name: "Сенди",
             type: "dog",
             temper: ['игривая', 'веселая', 'любопытная'],
@@ -80,7 +80,7 @@ const pets = {
             preferred_place_to_live: [],
             contacts: ''
         },
-        pet6: {
+        {
             name: "Лолита",
             type: "cat",
             image: ["/images/lolita.jpg"],
@@ -95,7 +95,7 @@ const pets = {
             preferred_place_to_live: [],
             contacts: ''
         },
-        pet7: {
+        {
             name: "Даша",
             type: "cat",
             image: ["/images/dasha.jpg"],
@@ -103,7 +103,7 @@ const pets = {
             status: "Приют",
             friendly_with: ['дети']
         },
-        pet8: {
+        {
             name: "Сабрина",
             type: "cat",
             image: ["/images/sabrina.jpg"],
@@ -111,14 +111,14 @@ const pets = {
             status: "Приют",
             friendly_with: ['другие животные'],
         },
-        pet9: {
+        {
             name: "Луна",
             type: "cat",
             image: ["/images/luna.jpg"],
             desc: "Description.",
             status: "Приют"
         }
-    }
+]
 
 
 export default pets;

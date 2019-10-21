@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
-// import PetList from '../PetList/PetList';
-// import CatalogFilters from '../CatalogFilters/CatalogFilters';
-import pets from '../../data/pets';
+import PetList from '../PetList/PetList';
+import CatalogFilters from '../CatalogFilters/CatalogFilters';
+// import pets from '../../data/pets';
 import './styles.css';
 import base from "../../base";
 
@@ -10,7 +10,11 @@ class Catalog extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            petsInit: pets,
+            //offline
+            // petsInit: pets,
+            // firebase
+            petsInit: [],
+
             listOfPets: [],
             filters: []
         };
@@ -18,12 +22,27 @@ class Catalog extends Component {
     }
 
     componentDidMount() {
-        this.setState({
-            listOfPets: this.state.petsInit,
+        // firebase
+        this.getPets();
+
+        // offline
+        // this.setState({
+        //     listOfPets: this.state.petsInit,
+        // });
+    }
+
+    getPets() {
+        base
+        .ref('pets/catalog')
+        .once('value')
+        .then(petsResults=>{
+            petsResults.forEach(child => {
+                this.setState({
+                    listOfPets: child.val(),
+                    petsInit: child.val()
+                });
+              });
         });
-        base.ref("pets/catalog").push(
-             pets
-        )
     }
 
     setFilterState(e) {
@@ -98,11 +117,11 @@ class Catalog extends Component {
     render() {
         return (
             <div className="catalog">
-                {/* <CatalogFilters
+                <CatalogFilters
                     pets={this.state.petsInit}
                     filterPets={this.filterPets} />
                 <PetList
-                    pets={this.state.listOfPets} /> */}
+                    pets={this.state.listOfPets} />
             </div>
         );
     }
