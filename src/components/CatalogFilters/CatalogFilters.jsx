@@ -2,8 +2,7 @@ import React from "react";
 
 import {
   InputFilter,
-  CheckBoxFilter,
-  MultiValueCheckboxFilter
+  CheckBoxFilter
 } from "../Filters/Filters";
 import MainFilters from "./MainFilters";
 import AdditionalFilters from "./AdditionalFilters";
@@ -71,7 +70,7 @@ class CatalogFilters extends React.Component {
                 )}
                 filterPets={this.props.filterPets}
               />
-              <MultiValueCheckboxFilter
+              <CheckBoxFilter
                 label="Хорошо ладит с:"
                 filterName="friendly_with"
                 filteredValues={ArrayUtility.RemoveMultiDuplicates(
@@ -80,7 +79,7 @@ class CatalogFilters extends React.Component {
                 )}
                 filterPets={this.props.filterPets}
               />
-              <MultiValueCheckboxFilter
+              <CheckBoxFilter
                 label="Где хочет жить:"
                 filterName="preferred_place_to_live"
                 filteredValues={ArrayUtility.RemoveMultiDuplicates(

@@ -1,17 +1,20 @@
-import React from 'react';
+import React from "react";
+import TextField from "@material-ui/core/TextField";
 
 function InputFilter(props) {
-    const { name, placeholder, filterPets } = props;
-    return (
-        <div className="filter-text filter">
-            <input
-                type="text"
-                className="filter"
-                name={name}
-                placeholder={placeholder}
-                onChange={filterPets}
-            />
-        </div>)
+  const { name, placeholder, filterPets } = props;
+  return (
+    <TextField
+      className="filter-text filter"
+      id="filled-search"
+      label={placeholder}
+      onChange={filterPets}
+      name={name}
+      type="search"
+      margin="normal"
+      variant="filled"
+    />
+  );
 }
 
 export default InputFilter;
