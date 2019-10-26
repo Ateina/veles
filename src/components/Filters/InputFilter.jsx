@@ -12,7 +12,6 @@ function InputFilter(props) {
       name={name}
       type="search"
       margin="normal"
-      variant="filled"
     />
   );
 }

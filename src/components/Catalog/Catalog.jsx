@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import PetList from "../PetList/PetList";
 import CatalogFilters from "../CatalogFilters/CatalogFilters";
 // import pets from '../../data/pets';
-import "./styles.css";
+import "./styles.scss";
 import base from "../../base";
 
 class Catalog extends Component {
