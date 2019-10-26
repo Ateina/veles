@@ -1,0 +1,44 @@
+@import '../../commonStyles/variables.scss';
+@import '../../commonStyles/scss/fontawesome.scss';
+@import "../../commonStyles/scss/solid.scss";
+
+.filters-pets {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-left: 10%;
+  margin-right: 10%;
+
+  .main-filters{
+      margin-bottom: 30px;
+  }
+
+  .filters-block {
+    display: flex;
+
+    .filter{
+        margin-right: 30px;
+        min-width: 200px;
+    }
+  }
+
+  .toggle-button {
+    display: flex;
+
+    .toggle-filters-button {
+      padding: 0;
+      border: 0;
+      background: transparent;
+      width: 40px;
+      margin-left: auto;
+
+      @extend %fa-icon;
+      @extend .fas;
+      &:before {
+        font-size: 20px;
+        content: fa-content($fa-var-angle-down);
+        color: green;
+      }
+    }
+  }
+}

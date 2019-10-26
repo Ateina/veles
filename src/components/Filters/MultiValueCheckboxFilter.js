@@ -4,7 +4,7 @@ function MultiValueCheckboxFilter(props) {
     const { label, filteredValues, filterName, isChecked, filterPets } = props;
 
     return (
-        <div className="filter-checkbox">
+        <div className="filter-checkbox filter">
             <fieldset>
                 <legend>{label}</legend>
                 {filteredValues.map(value => {

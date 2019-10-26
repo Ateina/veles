@@ -3,7 +3,7 @@ import React from 'react';
 function InputFilter(props) {
     const { name, placeholder, filterPets } = props;
     return (
-        <div className="filter-text">
+        <div className="filter-text filter">
             <input
                 type="text"
                 className="filter"
