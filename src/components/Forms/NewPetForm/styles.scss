@@ -1,0 +1,23 @@
+.new-pet-page {
+  min-height: calc(100vh - 100px);
+  .new-pet-form {
+    max-width: 800px;
+    margin: auto;
+    margin-top: 50px;
+
+    .label {
+      margin: auto;
+    }
+
+    .fields {
+      display: flex;
+      flex-direction: column;
+
+      input,
+      select,
+      textarea {
+        margin-top: 18px;
+      }
+    }
+  }
+}
