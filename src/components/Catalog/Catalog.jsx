@@ -45,7 +45,7 @@ class Catalog extends Component {
       });
   }
 
-  setFilterState(e) {
+  getFilterState(e) {
     const filterType = e.target.type;
     const filterName = e.target.name;
     const filterValue = e.target.value;
@@ -83,16 +83,11 @@ class Catalog extends Component {
         }
       }
     }
-
-    this.setState({
-      filters: currentFiltersList
-    });
     return currentFiltersList;
   }
 
-  applyFilters(currentFiltersList) {
-    // const filters = this.state.filters;
-    const filters = currentFiltersList;
+  applyFilters() {
+    const filters = this.state.filters;
     let filteredList = this.state.petsInit;
     filters.forEach(filter => {
       if (filter.type === "search") {
@@ -123,15 +118,16 @@ class Catalog extends Component {
         }
       }
     });
-    return filteredList;
-  }
-
-  filterPets(e) {
-    const currentFiltersList = this.setFilterState(e);
-    const filteredList = this.applyFilters(currentFiltersList);
     this.setState({
       listOfPets: filteredList
     });
+  }
+
+  filterPets(e) {
+    const currentFiltersList = this.getFilterState(e);
+    this.setState({
+      filters: currentFiltersList
+    }, () => { this.applyFilters() });
   }
 
   render() {
