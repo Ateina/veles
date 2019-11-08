@@ -1,7 +1,7 @@
 import React from 'react';
 
 import PetCard from '../PetCard/PetCard';
-import './styles.css';
+import './styles.scss';
 
 function PetList(props) {
     return (
